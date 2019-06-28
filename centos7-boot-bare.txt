@@ -1,0 +1,7 @@
+#!/bin/bash
+yum update -y
+yum install httpd -y
+yum install git -y
+git clone https://github.com/BlackrockDigital/startbootstrap-bare.git
+cp -r startbootstrap-bare/. /var/www/html
+systemctl start httpd

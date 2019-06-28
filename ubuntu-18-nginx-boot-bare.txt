@@ -1,0 +1,6 @@
+#!/bin/bash
+apt-get update
+apt-get install nginx -y
+apt-get install git -y
+git clone https://github.com/BlackrockDigital/startbootstrap-bare.git
+cp -r startbootstrap-bare/. /var/www/html
